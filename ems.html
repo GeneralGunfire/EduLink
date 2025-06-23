@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-30px);
+            }
+            60% {
+                transform: translateY(-15px);
+            }
+        }
+
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: relative;
+            background: url('ems.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #ffffff;
+        }
+
+        h1 {
+            font-family: 'Pacifico', cursive;
+            font-size: 72px;
+            margin: 20px 0;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+            animation: bounce 2s infinite;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+        }
+
+        .side {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .side li {
+            margin-bottom: 30px;
+        }
+
+        .side li.extra-spacing {
+            margin-bottom: 100px;
+        }
+
+        .side a {
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 24px;
+            font-weight: bold;
+            padding: 15px 25px;
+            background: transparent;
+            border: 2px solid rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            width: 250px;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .side a:hover {
+            background-color: #007BFF;
+            color: #ffffff;
+            border-color: #007BFF;
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <h1>Economic Management Science</h1>
+    <div class="container">
+        <ul class="side left">
+            <li><a href="pagems-1.html">Grade 1</a></li>
+            <li><a href="pagems-2.html">Grade 2</a></li>
+            <li class="extra-spacing"><a href="pagems-3.html">Grade 3</a></li>
+            <li><a href="pagems-4.html">Grade 4</a></li>
+            <li><a href="pagems-5.html">Grade 5</a></li>
+            <li><a href="pagems-6.html">Grade 6</a></li>
+        </ul>
+        <ul class="side right">
+            <li><a href="pagems-7.html">Grade 7</a></li>
+            <li><a href="pagems-8.html">Grade 8</a></li>
+            <li class="extra-spacing"><a href="pagems-9.html">Grade 9</a></li>
+            <li><a href="pagems-10.html">Grade 10</a></li>
+            <li><a href="pagems-11.html">Grade 11</a></li>
+            <li><a href="pagems-12.html">Grade 12</a></li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathematics</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> <!-- Google Font -->
+    <style>
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-30px);
+            }
+            60% {
+                transform: translateY(-15px);
+            }
+        }
+
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; /* To stack title and buttons */
+            position: relative;
+            background: url('math.jpg') no-repeat center center fixed; /* Background image */
+            background-size: cover; /* Ensures the image scales to cover the whole screen */
+            color: #ffffff; /* Text color to contrast with the background */
+        }
+
+        h1 {
+            font-family: 'Pacifico', cursive; /* Apply the cool font */
+            font-size: 72px; /* Extra-large font size */
+            margin: 20px 0; /* Space around the title */
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Adds a subtle shadow */
+            animation: bounce 2s infinite; /* Cool bounce animation */
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+        }
+
+        .side {
+            list-style: none; /* Removes bullet points */
+            margin: 0;
+            padding: 0;
+        }
+
+        .side li {
+            margin-bottom: 30px; /* Space between each button */
+        }
+
+        .side li.extra-spacing {
+            margin-bottom: 100px; /* Larger space between the first and second group of buttons */
+        }
+
+        .side a {
+            text-decoration: none; /* Removes underline */
+            color: #ffffff; /* Example text color */
+            font-size: 24px; /* Larger font size */
+            font-weight: bold; /* Bold text */
+            padding: 15px 25px; /* Padding for the clickable area */
+            background: transparent; /* Transparent background */
+            border: 2px solid rgba(255, 255, 255, 0.8); /* Slightly transparent border */
+            border-radius: 10px; /* Rounded corners */
+            width: 250px; /* Fixed button width */
+            display: inline-block; /* Prevents wrapping issues */
+            text-align: center; /* Centers text within the button */
+        }
+
+        .side a:hover {
+            background-color: #007BFF; /* Turns blue on hover */
+            color: #ffffff; /* White text color on hover */
+            border-color: #007BFF; /* Matches border color to hover background */
+            transition: all 0.3s ease; /* Smooth transition effect */
+        }
+    </style>
+</head>
+<body>
+    <h1>Mathematics</h1> <!-- Updated Title with Animation -->
+    <div class="container">
+        <ul class="side left">
+            <li><a href="pagem-1.html">Grade 1</a></li>
+            <li><a href="pagem-2.html">Grade 2</a></li>
+            <li class="extra-spacing"><a href="pagem-3.html">Grade 3</a></li>
+            <li><a href="pagem-4.html">Grade 4</a></li>
+            <li><a href="pagem-5.html">Grade 5</a></li>
+            <li><a href="pagem-6.html">Grade 6</a></li>
+        </ul>
+        <ul class="side right">
+            <li><a href="pagem-7.html">Grade 7</a></li>
+            <li><a href="pagem-8.html">Grade 8</a></li>
+            <li class="extra-spacing"><a href="pagem-9.html">Grade 9</a></li>
+            <li><a href="pagem-10.html">Grade 10</a></li>
+            <li><a href="pagem-11.html">Grade 11</a></li>
+            <li><a href="pagem-12.html">Grade 12</a></li>
+        </ul>
+    </div>
+</body>
+</html>
